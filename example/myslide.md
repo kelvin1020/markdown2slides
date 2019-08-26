@@ -30,11 +30,11 @@
 
 ### 海龟学院注册
 - 输入 用户名， 邮箱， 密码, 进行注册
-- ![](assets/04turtleacademy_register2.png)
+- ![](assets/04turtleacademy_register_two.png)
 
 ### 海龟学院登录
 - 输入 用户名或邮箱， 密码， 登录网站
-- ![](assets/05turtleacademy_login.png)
+- ![](assets/05turtleacademy_login_in.png)
 
 ### 进入用户主页
 - 点击用户名
@@ -42,14 +42,14 @@
 
 ### 进入用户主页
 - 点击 Profile
-- ![](assets/07turtleacademy_profile2.png)
+- ![](assets/07turtleacademy_profile_two.png)
 
 ### 进入编程界面
 - 点击 Create new program
 - ![](assets/08turtleacademy_create.png)
 
 ### 编程界面
-- ![](assets/09turtleacademy_create2.png)
+- ![](assets/09turtleacademy_create_two.png)
 - 海龟一开始时在屏幕中心，头朝上
 
 
@@ -69,3 +69,6 @@
 > FD 前进, BK 后退, LT 左转, RT 右转
 
 > CS 清屏并回到原位 
+
+### 二、循环
+
