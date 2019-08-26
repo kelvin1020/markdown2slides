@@ -48,7 +48,7 @@ class MarkdownRevealjsConverter(MarkdownConverter):
         with open(self.temp_md_fname, 'w') as f:
             f.write(self.md_content)
         cmd = f"""
-        /usr/local/bin/pandoc -t revealjs \
+        /usr/bin/pandoc -t revealjs \
         --standalone -i\
     --variable theme={self.config["revealjs_theme"]} \
     --variable transition={self.config["revealjs_transition"]} \
