@@ -1,26 +1,28 @@
-# My Beautiful Slide
+# 海龟做图 - Logo编程语言入门
 
-## Introduction
+## 介绍
 
-### Welcome
+### 什么是编程语言？
 
-- item 1
-- item 2
+- 人用于控制计算机运行的一种“语言”
+- ![](assets/02HelloWorld.png)
 
-### local image
+### 有哪些编程语言？
 
-![](assets/2019-01-16-20-20-09.png)
+- 机器语言：0000,0001,000000000001
+- 汇编语言：mov eax, ebx
+- 高级语言：Java、C、Python、C++、 MATLAB...
+- ![](assets/00programming.jpg) 
 
-### inline image
+### logo 语言
+- 用于绘图
+- 简单、易学
 
-- text
-- ![](assets/2019-01-16-20-20-09.png)
+### 海龟学院
 
+- 一个学习交流Logo语言的网站
+- [网址 http://turtleacademy.com/](http://turtleacademy.com/)
+- ![](assets/01turtleacademy.png)
 
-### web image
+### 海龟学院注册
 
-![](https://upload-images.jianshu.io/upload_images/64542-ffa6aaec43eff788.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp)
-
-### video
-
-[video](assets/markdown2slides-intro.mp4)
