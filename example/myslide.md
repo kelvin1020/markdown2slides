@@ -50,6 +50,7 @@
 
 ### 编程界面
 - ![](assets/09turtleacademy_create2.png)
+- 海龟一开始时在屏幕中心，头朝上
 
 
 ### 一、控制海龟的基本命令

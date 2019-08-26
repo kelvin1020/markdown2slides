@@ -2,4 +2,5 @@ __pycache__/
 example/temp.html
 example/temp.md
 .vscode/
-example/assets/
+example/assets/2019*.png
+example/assets/2019*.jpg
