@@ -2,4 +2,4 @@ __pycache__/
 example/temp.html
 example/temp.md
 .vscode/
-
+.DS_Store
