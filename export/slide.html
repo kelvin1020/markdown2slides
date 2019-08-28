@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="杨舒程">
-  <title>海龟做图 - Logo编程语言入门</title>
+  <title>海龟作图 - Logo编程语言入门</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,7 @@
     <div class="slides">
 
 <section>
-  <h1 class="title">海龟做图 - Logo编程语言入门</h1>
+  <h1 class="title">海龟作图 - Logo编程语言入门</h1>
   <p class="author">杨舒程</p>
   <p class="date">2019年8月</p>
 </section>
@@ -61,6 +61,12 @@
 <li class="fragment"><img src="assets/2019-08-27-03-10-19-506635.png" style="border-style: none" alt=""></li>
 </ul>
 </section><section class="slide level2">
+<h2>海龟学院-Playground</h2>
+<ul>
+<li class="fragment">不用登录就可以运行Logo程序, 但不方便调试</li>
+<li class="fragment"><img src="assets/2019-08-28-22-10-08-355031.png" style="border-style: none" alt=""></li>
+</ul>
+</section><section class="slide level2">
 <h2>海龟学院注册</h2>
 <ul>
 <li class="fragment">点击 register 注册</li>
@@ -69,7 +75,7 @@
 </section><section class="slide level2">
 <h2>海龟学院注册</h2>
 <ul>
-<li class="fragment">输入 用户名， 邮箱， 密码, 进行注册</li>
+<li class="fragment">输入 用户名， 邮箱， 密码, 进行注册，并验证邮箱</li>
 <li class="fragment"><img src="assets/2019-08-27-06-42-54-802000.png" style="border-style: none" alt=""></li>
 </ul>
 </section><section class="slide level2">
@@ -103,32 +109,361 @@
 <li class="fragment">海龟一开始时在屏幕中心，头朝上</li>
 </ul>
 </section><section class="slide level2">
+<h2>零、Hello world!</h2>
+<ul>
+<li class="fragment">正如刚开始学所有的编程语言一样</li>
+</ul>
+<pre><code>rt 90 
+bk 120
+setlabelheight 50
+label [Hello World!]</code></pre>
+<ul>
+<li class="fragment">这段代码的含义，让我们一起学习吧！</li>
+</ul>
+</section><section class="slide level2">
 <h2>一、控制海龟的基本命令</h2>
 <blockquote>
-<p>FD <strong>[步数]</strong> （前进 forward）</p>
+<p>fd <strong>步数</strong> （前进 forward）</p>
 </blockquote>
 <blockquote>
-<p>BK <strong>[步数]</strong> （后退 back）</p>
+<p>bk <strong>步数</strong> （后退 back）</p>
 </blockquote>
 <blockquote>
-<p>LT <strong>[角度]</strong> （左转 left）</p>
+<p>lt <strong>角度</strong> （左转 left）</p>
 </blockquote>
 <blockquote>
-<p>RT <strong>[角度]</strong> （右转 right）</p>
+<p>rt <strong>角度</strong> （右转 right）</p>
 </blockquote>
 <blockquote>
-<p>CS （清屏并回到原位 clearscreen）</p>
+<p>cs （清屏并回到原位 clearscreen）</p>
 </blockquote>
 </section><section class="slide level2">
 <h2>试一试：让小海龟画一个正方形</h2>
+<p><strong>边长可以指定为100  (注：Logo不区分大小写）</strong></p>
 <blockquote>
-<p>FD 前进, BK 后退, LT 左转, RT 右转</p>
+<p>fd 前进, bk 后退, lt 左转, rt 右转</p>
 </blockquote>
 <blockquote>
-<p>CS 清屏并回到原位</p>
+<p>cs 清屏并回到原位</p>
+</blockquote>
+<ul>
+<li class="fragment"><p><strong>参考代码</strong></p></li>
+<li class="fragment"><p>fd 100 rt 90 fd 100 rt 90 fd 100 rt 90 fd 100 rt 90</p></li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：让小海龟画一个等边三角形</h2>
+<p><strong>边长可以指定为100</strong></p>
+<blockquote>
+<p>fd 前进, bk 后退, lt 左转, rt 右转</p>
+</blockquote>
+<blockquote>
+<p>cs 清屏并回到原位</p>
+</blockquote>
+<ul>
+<li class="fragment"><p><strong>参考代码</strong></p></li>
+<li class="fragment"><p>fd 100 rt 120 fd 100 rt 120 fd 100 rt 120</p></li>
+</ul>
+</section><section class="slide level2">
+<h2></h2>
+<ul>
+<li class="fragment">要让三角形底边向下？ 让小海龟转一下方向</li>
+<li class="fragment">rt 30</li>
+<li class="fragment">fd 100 rt 120 fd 100 rt 120 fd 100 rt 120</li>
+</ul>
+</section><section class="slide level2">
+<h2>画正五边形、正六边形...？ 先等等</h2>
+</section><section class="slide level2">
+<h2>学一学：几何知识</h2>
+<ul>
+<li class="fragment">多边形的外角、外角和</li>
+<li class="fragment">对于一个封闭的凸多边形， 其外角和总是360度</li>
+<li class="fragment">如果小海龟要画凸多边形， 总共转过的角度是360度！ (例子：正方形，三角形）</li>
+</ul>
+</section><section class="slide level2">
+<h2></h2>
+<ul>
+<li class="fragment">画正方形的代码 fd 100 rt 90 fd 100 rt 90 fd 100 rt 90 fd 100 rt 90</li>
+<li class="fragment">写的重复的指令太多了？ 画五边形、六边形？</li>
+</ul>
+</section><section class="slide level2">
+<h2>二、repeat循环</h2>
+<blockquote>
+<p>repeat  <strong>重复次数</strong>  [<strong>需要重复的指令</strong>]</p>
+</blockquote>
+<ul>
+<li class="fragment">将需要重复的指令重复运行</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：用repeat指令画正三角形、正方形</h2>
+<blockquote>
+<p>repeat  <strong>重复次数</strong>  [<strong>需要重复的指令</strong>]</p>
+</blockquote>
+<ul>
+<li class="fragment"><strong>参考代码</strong></li>
+<li class="fragment">正三角形 repeat 3 [fd 100 rt 120]</li>
+<li class="fragment">正方形 repeat 4 [fd 100 rt 90]</li>
+<li class="fragment">正n边形?</li>
+<li class="fragment">repeat n [fd 边长 rt 360/n]</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：repeat画正n边形</h2>
+<ul>
+<li class="fragment">如果小海龟跑出了边界，将边长放小一点</li>
+<li class="fragment">n 不断增加， 你发现了什么？</li>
+</ul>
+</section><section class="slide level2">
+<h2>另一种画圆的方式</h2>
+<blockquote>
+<p>arc 360 半径</p>
+</blockquote>
+<ul>
+<li class="fragment">半圆</li>
+<li class="fragment">arc 180 半径</li>
+<li class="fragment">一段弧长</li>
+<li class="fragment">arc 角度 半径</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：用repeat 画五角星</h2>
+<ul>
+<li class="fragment">repeat 5 [fd 100 rt 144]</li>
+<li class="fragment">让五角星正立？</li>
+<li class="fragment">rt 18 repeat 5 [fd 100 rt 144]</li>
+</ul>
+</section><section class="slide level2">
+<h2>只能一笔画？</h2>
+<ul>
+<li class="fragment">当然不是</li>
+</ul>
+</section><section class="slide level2">
+<h2>三、pu提笔、pd放笔</h2>
+<blockquote>
+<p>pu （提笔 penup）</p>
+</blockquote>
+<blockquote>
+<p>pd （提笔 pendown）</p>
 </blockquote>
 </section><section class="slide level2">
-<h2>二、循环</h2>
+<h2>四、home 让小海龟回家</h2>
+<blockquote>
+<p>home （回到初始位置，但不清屏）</p>
+</blockquote>
+<ul>
+<li class="fragment">一般和 pu pd 配合使用，防止在回家途中画画，弄乱其他图形</li>
+<li class="fragment">pu home pd</li>
+<li class="fragment">试一试： 画不同图形的组合</li>
+</ul>
+</section><section class="slide level2">
+<h2>想给图形上颜色？</h2>
+</section><section class="slide level2">
+<h2>五、用 filled 填充颜色</h2>
+<blockquote>
+<p>filled  <strong>填充颜色</strong>  [<strong>需填充的图形的代码</strong>]</p>
+</blockquote>
+<ul>
+<li class="fragment">填充颜色: 颜色代号 或 &quot;颜色英文名称<br />
+</li>
+<li class="fragment">如： filled 6 [rt 18 repeat 5 [fd 100 rt 144]]</li>
+<li class="fragment">filled &quot;yellow [rt 18 repeat 5 [fd 100 rt 144]]</li>
+<li class="fragment">试一试其他图形</li>
+</ul>
+</section><section class="slide level2">
+<h2>六、setcolor 改变线的颜色</h2>
+<blockquote>
+setcolor  <strong>线的颜色</strong><br />
+
+</blockquote>
+<ul>
+<li class="fragment">颜色: 颜色代号 或 &quot;颜色英文名称 或 rgb颜色代码（初始时为黑色）</li>
+<li class="fragment">rgb 颜色 <a href="http://tool.oschina.net/commons?type=3" class="uri">http://tool.oschina.net/commons?type=3</a></li>
+<li class="fragment">如： setcolor &quot;red repeat 4 [fd 100 rt 90]</li>
+</ul>
+</section><section class="slide level2">
+<h2>七、setwidth 改变线的粗细</h2>
+<blockquote>
+setwidth  <strong>线的宽度</strong><br />
+
+</blockquote>
+<ul>
+<li class="fragment">线的宽度: 初始时为1</li>
+<li class="fragment">如： setwidth 20 repeat 4 [fd 100 rt 90]</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：画奥运五环</h2>
+<ul>
+<li class="fragment"><img src="assets/2019-08-29-01-55-55-042017.png" style="border-style: none" alt=""></li>
+<li class="fragment">提示: 要用 arc、 pu、 pd、home、setcolor</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：画奥运五环</h2>
+<pre><code>setwidth 10
+
+arc 360 50 
+
+pu lt 90 fd 120 rt 90 pd
+setcolor &quot;blue
+arc 360 50 
+pu home pd
+
+pu rt 90 fd 120 lt 90 pd
+setcolor &quot;red
+arc 360 50 
+pu home pd
+
+pu lt 135 fd 80 pd
+setcolor &quot;yellow
+arc 360 50 
+pu home pd
+
+pu rt 135 fd 80 pd
+setcolor &quot;green
+arc 360 50 
+pu home pd</code></pre>
+</section><section class="slide level2">
+<h2>八、用fill填充 (可填充背景)</h2>
+<ul>
+<li class="fragment">先用setcolor 设定 <strong>线的颜色</strong><br />
+</li>
+</ul>
+<blockquote>
+<p>fill （填充）</p>
+</blockquote>
+<ul>
+<li class="fragment"><p>注意：若在闭合图形里，则填充图形，否则填充背景。在边上不填充</p></li>
+<li class="fragment"><p>repeat 4 [fd 100 rt 90] rt 45 fd 10 setcolor &quot;red fill home</p></li>
+</ul>
+</section><section class="slide level2">
+<h2>九、label 标签</h2>
+<blockquote>
+<p>label [想显示的文字]</p>
+</blockquote>
+<blockquote>
+<p>setlabelheight <strong>标签的高度</strong> (显示文字的大小)</p>
+</blockquote>
+<ul>
+<li class="fragment">文字的方向位于小海龟的朝向</li>
+<li class="fragment">rt 90 label [Hello World!]</li>
+</ul>
+</section><section class="slide level2">
+<h2>代码还能更简洁吗？</h2>
+<ul>
+<li class="fragment">可以，但可能会有些难</li>
+</ul>
+</section><section class="slide level2">
+<h2>十、函数</h2>
+<blockquote>
+<p>to 函数名 :输入参数名 函数语句 end</p>
+</blockquote>
+<ul>
+<li class="fragment">输入参数可以没有</li>
+<li class="fragment">画一个边长为100的正方形</li>
+<li class="fragment">to square repeat 4 [fd 100 rt 90] end</li>
+<li class="fragment">square</li>
+</ul>
+</section><section class="slide level2">
+<h2>十、函数</h2>
+<blockquote>
+<p>to 函数名 :输入参数名 函数语句 end</p>
+</blockquote>
+<ul>
+<li class="fragment">也可以添加参数，注意参数前要加冒号</li>
+<li class="fragment">画一个边长为输入值的正方形</li>
+<li class="fragment">to square :size repeat 4 [fd :size rt 90] end</li>
+<li class="fragment">square 50</li>
+<li class="fragment">square 100</li>
+</ul>
+</section><section class="slide level2">
+<h2>试一试：画天文台的台标</h2>
+<ul>
+<li class="fragment">将下面的代码复制到程序框之中</li>
+</ul>
+<pre><code>to shao :radius :sides 
+
+  make &quot;semisides :sides/2
+  make &quot;edge difference :semisides :radius
+  
+  filled &quot;blue 
+  [
+  lt 90
+  arc 180 :radius
+  home
+  ]
+
+  filled &quot;cyan
+  [
+  rt 90
+  arc 180 :radius
+  home
+  ]
+
+  pu lt 90 fd :radius pd 
+  fd :edge rt 90 
+  fd :semisides rt 90 
+  fd :sides rt 90
+  fd :semisides rt 90
+  fd :edge rt 90
+  
+  pu 
+  fd :edge 
+  setcolor &quot;cyan fill bk :edge rt 90
+  pd
+  
+  fd :edge rt 90
+  fd :semisides rt 90 
+  fd :sides rt 90
+  fd :semisides rt 90
+  fd :edge rt 90
+  
+  pu
+  fd :edge
+  setcolor &quot;blue fill bk :edge rt 90
+  pd
+ 
+end
+
+make &quot;sides_ 400
+make &quot;radius_ 150
+
+shao :radius_ :sides_ 
+
+setcolor 0
+home
+pu bk 260
+rt 90 back 240
+setlabelheight 50 label &quot;中国科学院上海天文台
+pd 
+hideturtle</code></pre>
+</section><section class="slide level2">
+<h2>hideturtle 让小海龟隐身</h2>
+<blockquote>
+<p>ht （让小海龟隐身 hideturtle）</p>
+</blockquote>
+<blockquote>
+<p>st （让小海龟出现 showturtle）</p>
+</blockquote>
+</section><section class="slide level2">
+<h2>接下来？</h2>
+<ul>
+<li class="fragment">重点讲了一些命令，其余靠大家自学了</li>
+<li class="fragment">海龟学院的课程</li>
+<li class="fragment"><img src="assets/2019-08-27-04-38-33-254122.png" style="border-style: none" alt=""></li>
+</ul>
+</section><section class="slide level2">
+<h2>接下来？</h2>
+<ul>
+<li class="fragment">别人的作品</li>
+<li class="fragment"><img src="assets/2019-08-27-04-39-48-300856.png" style="border-style: none" alt=""></li>
+</ul>
+</section><section class="slide level2">
+<h2>还想提高？更专业？</h2>
+<ul>
+<li class="fragment"><p><a href="http://www.mathcats.com/gallery/15wordcontest.html">Logo 15-word challenge</a></p></li>
+<li class="fragment"><p>书籍：turtle geometry <a href="https://mitpress.mit.edu/books/turtle-geometry" class="uri">https://mitpress.mit.edu/books/turtle-geometry</a></p></li>
+</ul>
+</section><section class="slide level2">
+<h2>创作时间</h2>
+<ul>
+<li class="fragment">发挥想象力，创作自己的海龟绘图作品</li>
+</ul>
 </section><section class="slide level2">
 <h2>放映结束</h2>
 <p>谢谢观赏！</p>
