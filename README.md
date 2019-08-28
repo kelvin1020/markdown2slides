@@ -1,3 +1,13 @@
+# 海龟作图 - LOGO编程语言入门课件（markdown2slides实现)
+该课件版权所有，侵权必究
+
+All rights reserved
+
+----
+
+
+
+
 # markdown2slides
 Tools for converting Markdown Source File to Reveal.js HTML5 slides
 
