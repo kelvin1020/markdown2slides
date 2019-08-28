@@ -232,7 +232,7 @@ label [Hello World!]
 
 ### 试一试：画奥运五环
 - ![](assets/olympic.png)
-- 提示: 要用 arc、 pu、 pd、home、setcolor、setwidth 
+- 提示: 要用 arc、 pu、 pd、home、setcolor 及 setwidth 
 
 ### 试一试：画奥运五环
 
